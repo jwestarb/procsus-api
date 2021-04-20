@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-renases",
+      "handler": "tb-renases.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-renases/count",
+      "handler": "tb-renases.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-renases/:id",
+      "handler": "tb-renases.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-renases",
+      "handler": "tb-renases.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-renases/:id",
+      "handler": "tb-renases.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-renases/:id",
+      "handler": "tb-renases.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

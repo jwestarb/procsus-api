@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_financiamento",
+  "info": {
+    "name": "tb_financiamento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_financiamento": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2
+    },
+    "no_financiamento": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "maxLength": 6
+    },
+    "tb_procedimentos": {
+      "collection": "tb-procedimento",
+      "via": "co_financiamento"
+    }
+  }
+}

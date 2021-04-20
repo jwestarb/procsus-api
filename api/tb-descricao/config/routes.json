@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-descricaos",
+      "handler": "tb-descricao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-descricaos/count",
+      "handler": "tb-descricao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-descricaos/:id",
+      "handler": "tb-descricao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-descricaos",
+      "handler": "tb-descricao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-descricaos/:id",
+      "handler": "tb-descricao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-descricaos/:id",
+      "handler": "tb-descricao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

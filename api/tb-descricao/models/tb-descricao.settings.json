@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_descricao",
+  "info": {
+    "name": "tb_descricao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "ds_procedimento": {
+      "type": "text",
+      "maxLength": 4000
+    },
+    "dt_competencia": {
+      "type": "string",
+      "maxLength": 6
+    }
+  }
+}

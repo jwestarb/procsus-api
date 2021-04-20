@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_regra_condicionada",
+  "info": {
+    "name": "tb_regra_condicionada",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_regra_condicionada": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 4
+    },
+    "no_regra_condicionada": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "ds_regra_condicionada": {
+      "type": "text",
+      "maxLength": 4000
+    },
+    "rl_procedimento_regra_conds": {
+      "collection": "rl-procedimento-regra-cond",
+      "via": "co_regra_condicionada"
+    }
+  }
+}

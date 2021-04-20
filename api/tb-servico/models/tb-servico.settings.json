@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_servico",
+  "info": {
+    "name": "tb_servico",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_servico": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 3
+    },
+    "no_servico": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_servicos": {
+      "collection": "rl-procedimento-servico",
+      "via": "co_servico"
+    }
+  }
+}

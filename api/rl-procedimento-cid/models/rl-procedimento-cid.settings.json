@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_cid",
+  "info": {
+    "name": "rl_procedimento_cid",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_cid": {
+      "model": "tb-cid",
+      "via": "rl_procedimento_cids"
+    },
+    "co_procedimento": {
+      "model": "tb-procedimento",
+      "via": "rl_procedimento_cids"
+    },
+    "st_principal": {
+      "type": "string",
+      "unique": false,
+      "maxLength": 1
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

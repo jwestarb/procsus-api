@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-modalidades",
+      "handler": "tb-modalidade.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-modalidades/count",
+      "handler": "tb-modalidade.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-modalidades/:id",
+      "handler": "tb-modalidade.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-modalidades",
+      "handler": "tb-modalidade.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-modalidades/:id",
+      "handler": "tb-modalidade.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-modalidades/:id",
+      "handler": "tb-modalidade.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

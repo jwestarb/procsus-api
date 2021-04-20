@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_tuss",
+  "info": {
+    "name": "rl_procedimento_tuss"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "model": "tb-procedimento",
+      "via": "rl_procedimento_tusses"
+    },
+    "co_tuss": {
+      "model": "tb-tuss",
+      "via": "rl_procedimento_tusses"
+    }
+  }
+}

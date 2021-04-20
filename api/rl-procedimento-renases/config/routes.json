@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-renases",
+      "handler": "rl-procedimento-renases.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-renases/count",
+      "handler": "rl-procedimento-renases.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-renases/:id",
+      "handler": "rl-procedimento-renases.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-renases",
+      "handler": "rl-procedimento-renases.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-renases/:id",
+      "handler": "rl-procedimento-renases.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-renases/:id",
+      "handler": "rl-procedimento-renases.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-servicos",
+      "handler": "tb-servico.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-servicos/count",
+      "handler": "tb-servico.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-servicos/:id",
+      "handler": "tb-servico.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-servicos",
+      "handler": "tb-servico.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-servicos/:id",
+      "handler": "tb-servico.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-servicos/:id",
+      "handler": "tb-servico.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

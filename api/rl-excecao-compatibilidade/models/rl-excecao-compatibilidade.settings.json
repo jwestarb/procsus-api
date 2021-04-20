@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_excecao_compatibilidade",
+  "info": {
+    "name": "rl_excecao_compatibilidade",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento_restricao": {
+      "model": "tb-procedimento",
+      "via": "rl_excecao_compatibilidades"
+    },
+    "co_procedimento_principal": {
+      "model": "tb-procedimento",
+      "via": "rl_excecao_compat_principal"
+    },
+    "co_registro_principal": {
+      "model": "tb-registro",
+      "via": "rl_excecao_compatibilidades"
+    },
+    "co_procedimento_compativel": {
+      "model": "tb-procedimento",
+      "via": "rl_excecao_compat_compativel"
+    },
+    "co_registro_compativel": {
+      "model": "tb-registro",
+      "via": "rl_excecao_compat_compativel"
+    },
+    "tp_compatibilidade": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

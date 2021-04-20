@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_descricao_detalhe",
+  "info": {
+    "name": "tb_descricao_detalhe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_detalhe": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 3
+    },
+    "ds_detalhe": {
+      "type": "text",
+      "maxLength": 4000
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

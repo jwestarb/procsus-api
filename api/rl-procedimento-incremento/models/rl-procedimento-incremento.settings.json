@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_incremento",
+  "info": {
+    "name": "rl_procedimento_incremento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_incrementos",
+      "model": "tb-procedimento"
+    },
+    "co_habilitacao": {
+      "via": "rl_procedimento_incrementos",
+      "model": "tb-habilitacao"
+    },
+    "vl_percentual_sh": {
+      "type": "decimal",
+      "required": false
+    },
+    "vl_percentual_sa": {
+      "type": "decimal"
+    },
+    "vl_percentual_sp": {
+      "type": "decimal"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

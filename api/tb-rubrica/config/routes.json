@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-rubricas",
+      "handler": "tb-rubrica.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-rubricas/count",
+      "handler": "tb-rubrica.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-rubricas/:id",
+      "handler": "tb-rubrica.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-rubricas",
+      "handler": "tb-rubrica.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-rubricas/:id",
+      "handler": "tb-rubrica.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-rubricas/:id",
+      "handler": "tb-rubrica.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

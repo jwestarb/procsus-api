@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_rede_atencao",
+  "info": {
+    "name": "tb_rede_atencao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_rede_atencao": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 3
+    },
+    "no_rede_atencao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    }
+  }
+}

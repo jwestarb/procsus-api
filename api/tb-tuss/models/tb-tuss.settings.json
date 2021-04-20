@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_tuss",
+  "info": {
+    "name": "tb_tuss",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_tuss": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10
+    },
+    "no_tuss": {
+      "type": "string",
+      "required": true,
+      "maxLength": 450
+    },
+    "rl_procedimento_tusses": {
+      "via": "co_tuss",
+      "collection": "rl-procedimento-tuss"
+    }
+  }
+}

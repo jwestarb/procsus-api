@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-habilitacaos",
+      "handler": "tb-habilitacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-habilitacaos/count",
+      "handler": "tb-habilitacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-habilitacaos/:id",
+      "handler": "tb-habilitacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-habilitacaos",
+      "handler": "tb-habilitacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-habilitacaos/:id",
+      "handler": "tb-habilitacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-habilitacaos/:id",
+      "handler": "tb-habilitacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_grupo_habilitacao",
+  "info": {
+    "name": "tb_grupo_habilitacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nu_grupo_habilitacao": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 4
+    },
+    "no_grupo_habilitacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "ds_grupo_habilitacao": {
+      "type": "string",
+      "maxLength": 250
+    },
+    "rl_procedimento_habilitacaos": {
+      "collection": "rl-procedimento-habilitacao",
+      "via": "nu_grupo_habilitacao"
+    }
+  }
+}

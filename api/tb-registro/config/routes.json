@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-registros",
+      "handler": "tb-registro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-registros/count",
+      "handler": "tb-registro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-registros/:id",
+      "handler": "tb-registro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-registros",
+      "handler": "tb-registro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-registros/:id",
+      "handler": "tb-registro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-registros/:id",
+      "handler": "tb-registro.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

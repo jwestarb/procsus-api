@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-tusses",
+      "handler": "rl-procedimento-tuss.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-tusses/count",
+      "handler": "rl-procedimento-tuss.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-tusses/:id",
+      "handler": "rl-procedimento-tuss.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-tusses",
+      "handler": "rl-procedimento-tuss.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-tusses/:id",
+      "handler": "rl-procedimento-tuss.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-tusses/:id",
+      "handler": "rl-procedimento-tuss.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

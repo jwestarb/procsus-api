@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_habilitacao",
+  "info": {
+    "name": "rl_procedimento_habilitacao"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_habilitacaos",
+      "model": "tb-procedimento"
+    },
+    "co_habilitacao": {
+      "via": "rl_procedimento_habilitacaos",
+      "model": "tb-habilitacao"
+    },
+    "nu_grupo_habilitacao": {
+      "via": "rl_procedimento_habilitacaos",
+      "model": "tb-grupo-habilitacao"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

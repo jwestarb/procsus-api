@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_servico_classificacao",
+  "info": {
+    "name": "tb_servico_classificacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_servico": {
+      "type": "string",
+      "required": true,
+      "maxLength": 3
+    },
+    "co_classificacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 3
+    },
+    "no_classificacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_servicos": {
+      "collection": "rl-procedimento-servico",
+      "via": "co_classificacao"
+    }
+  }
+}

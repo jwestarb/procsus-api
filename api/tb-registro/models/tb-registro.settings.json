@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_registro",
+  "info": {
+    "name": "tb_registro",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_registro": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2
+    },
+    "no_registro": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_compat_regprinc": {
+      "collection": "rl-procedimento-compativel",
+      "via": "co_registro_principal"
+    },
+    "rl_procedimento_compat_regcompat": {
+      "collection": "rl-procedimento-compativel",
+      "via": "co_registro_compativel"
+    },
+    "rl_procedimento_registros": {
+      "collection": "rl-procedimento-registro",
+      "via": "co_registro"
+    },
+    "rl_excecao_compatibilidades": {
+      "via": "co_registro_principal",
+      "collection": "rl-excecao-compatibilidade"
+    },
+    "rl_excecao_compat_compativel": {
+      "via": "co_registro_compativel",
+      "collection": "rl-excecao-compatibilidade"
+    }
+  }
+}

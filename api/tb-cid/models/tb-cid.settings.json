@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_cid",
+  "info": {
+    "name": "tb_cid",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_cid": {
+      "type": "string",
+      "required": true,
+      "maxLength": 4
+    },
+    "no_cid": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "tp_agravo": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "tp_sexo": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "tp_estadio": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "vl_campos_irradiados": {
+      "type": "string",
+      "maxLength": 4
+    },
+    "rl_procedimento_cids": {
+      "via": "co_cid",
+      "collection": "rl-procedimento-cid"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-excecao-compatibilidades",
+      "handler": "rl-excecao-compatibilidade.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-excecao-compatibilidades/count",
+      "handler": "rl-excecao-compatibilidade.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-excecao-compatibilidades/:id",
+      "handler": "rl-excecao-compatibilidade.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-excecao-compatibilidades",
+      "handler": "rl-excecao-compatibilidade.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-excecao-compatibilidades/:id",
+      "handler": "rl-excecao-compatibilidade.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-excecao-compatibilidades/:id",
+      "handler": "rl-excecao-compatibilidade.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

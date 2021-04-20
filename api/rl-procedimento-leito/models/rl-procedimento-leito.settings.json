@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_leito",
+  "info": {
+    "name": "rl_procedimento_leito"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_leitos",
+      "model": "tb-procedimento"
+    },
+    "co_tipo_leito": {
+      "via": "rl_procedimento_leitos",
+      "model": "tb-tipo-leito"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

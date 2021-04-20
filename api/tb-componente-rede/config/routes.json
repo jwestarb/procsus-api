@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-componente-redes",
+      "handler": "tb-componente-rede.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-componente-redes/count",
+      "handler": "tb-componente-rede.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-componente-redes/:id",
+      "handler": "tb-componente-rede.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-componente-redes",
+      "handler": "tb-componente-rede.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-componente-redes/:id",
+      "handler": "tb-componente-rede.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-componente-redes/:id",
+      "handler": "tb-componente-rede.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

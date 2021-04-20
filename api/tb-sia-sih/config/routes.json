@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-sia-sihs",
+      "handler": "tb-sia-sih.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-sia-sihs/count",
+      "handler": "tb-sia-sih.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-sia-sihs/:id",
+      "handler": "tb-sia-sih.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-sia-sihs",
+      "handler": "tb-sia-sih.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-sia-sihs/:id",
+      "handler": "tb-sia-sih.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-sia-sihs/:id",
+      "handler": "tb-sia-sih.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

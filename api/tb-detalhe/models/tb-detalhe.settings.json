@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_detalhe",
+  "info": {
+    "name": "tb_detalhe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_detalhe": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": true,
+      "maxLength": 3
+    },
+    "no_detalhe": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "maxLength": 6
+    },
+    "rl_procedimento_detalhes": {
+      "collection": "rl-procedimento-detalhe",
+      "via": "co_detalhe"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-servico-classificacaos",
+      "handler": "tb-servico-classificacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-servico-classificacaos/count",
+      "handler": "tb-servico-classificacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-servico-classificacaos/:id",
+      "handler": "tb-servico-classificacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-servico-classificacaos",
+      "handler": "tb-servico-classificacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-servico-classificacaos/:id",
+      "handler": "tb-servico-classificacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-servico-classificacaos/:id",
+      "handler": "tb-servico-classificacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

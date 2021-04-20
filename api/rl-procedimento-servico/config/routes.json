@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-servicos",
+      "handler": "rl-procedimento-servico.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-servicos/count",
+      "handler": "rl-procedimento-servico.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-servicos/:id",
+      "handler": "rl-procedimento-servico.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-servicos",
+      "handler": "rl-procedimento-servico.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-servicos/:id",
+      "handler": "rl-procedimento-servico.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-servicos/:id",
+      "handler": "rl-procedimento-servico.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "procsus-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "API tabela Sigtap",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "0.21.18",
+    "pg": "8.5.1",
+    "pg-connection-string": "^2.4.0",
+    "strapi": "3.5.4",
+    "strapi-admin": "3.5.4",
+    "strapi-connector-bookshelf": "3.5.4",
+    "strapi-plugin-ckeditor5": "^1.7.0",
+    "strapi-plugin-content-manager": "3.5.4",
+    "strapi-plugin-content-type-builder": "3.5.4",
+    "strapi-plugin-email": "3.5.4",
+    "strapi-plugin-graphql": "3.5.4",
+    "strapi-plugin-upload": "3.5.4",
+    "strapi-plugin-users-permissions": "3.5.4",
+    "strapi-utils": "3.5.4"
+  },
+  "author": {
+    "name": "Julio Cesar Westarb Jr."
+  },
+  "strapi": {
+    "uuid": "9585b947-186c-459e-9418-97f7f03d959a"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

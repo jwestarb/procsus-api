@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-ocupacaos",
+      "handler": "tb-ocupacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-ocupacaos/count",
+      "handler": "tb-ocupacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-ocupacaos/:id",
+      "handler": "tb-ocupacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-ocupacaos",
+      "handler": "tb-ocupacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-ocupacaos/:id",
+      "handler": "tb-ocupacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-ocupacaos/:id",
+      "handler": "tb-ocupacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

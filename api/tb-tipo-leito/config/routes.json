@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-tipo-leitos",
+      "handler": "tb-tipo-leito.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-tipo-leitos/count",
+      "handler": "tb-tipo-leito.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-tipo-leitos/:id",
+      "handler": "tb-tipo-leito.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-tipo-leitos",
+      "handler": "tb-tipo-leito.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-tipo-leitos/:id",
+      "handler": "tb-tipo-leito.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-tipo-leitos/:id",
+      "handler": "tb-tipo-leito.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

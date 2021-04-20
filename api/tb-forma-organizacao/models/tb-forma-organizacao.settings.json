@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_forma_organizacao",
+  "info": {
+    "name": "tb_forma_organizacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_grupo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2
+    },
+    "co_sub_grupo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2
+    },
+    "co_forma_organizacao": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 2
+    },
+    "no_forma_organizacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

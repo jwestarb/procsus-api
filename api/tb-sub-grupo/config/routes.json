@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-sub-grupos",
+      "handler": "tb-sub-grupo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-sub-grupos/count",
+      "handler": "tb-sub-grupo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-sub-grupos/:id",
+      "handler": "tb-sub-grupo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-sub-grupos",
+      "handler": "tb-sub-grupo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-sub-grupos/:id",
+      "handler": "tb-sub-grupo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-sub-grupos/:id",
+      "handler": "tb-sub-grupo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

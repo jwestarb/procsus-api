@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-cids",
+      "handler": "tb-cid.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-cids/count",
+      "handler": "tb-cid.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-cids/:id",
+      "handler": "tb-cid.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-cids",
+      "handler": "tb-cid.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-cids/:id",
+      "handler": "tb-cid.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-cids/:id",
+      "handler": "tb-cid.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

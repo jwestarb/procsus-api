@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_registro",
+  "info": {
+    "name": "rl_procedimento_registro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_registros",
+      "model": "tb-procedimento"
+    },
+    "co_registro": {
+      "via": "rl_procedimento_registros",
+      "model": "tb-registro"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

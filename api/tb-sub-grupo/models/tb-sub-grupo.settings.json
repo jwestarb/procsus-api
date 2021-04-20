@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_sub_grupo",
+  "info": {
+    "name": "tb_sub_grupo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_grupo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2
+    },
+    "co_sub_grupo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2
+    },
+    "no_sub_grupo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

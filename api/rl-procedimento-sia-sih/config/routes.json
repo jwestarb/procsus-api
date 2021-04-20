@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-sia-sihs",
+      "handler": "rl-procedimento-sia-sih.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-sia-sihs/count",
+      "handler": "rl-procedimento-sia-sih.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-sia-sihs/:id",
+      "handler": "rl-procedimento-sia-sih.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-sia-sihs",
+      "handler": "rl-procedimento-sia-sih.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-sia-sihs/:id",
+      "handler": "rl-procedimento-sia-sih.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-sia-sihs/:id",
+      "handler": "rl-procedimento-sia-sih.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_ocupacao",
+  "info": {
+    "name": "tb_ocupacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_ocupacao": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 6
+    },
+    "no_ocupacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "rl_procedimento_ocupacaos": {
+      "via": "co_ocupacao",
+      "collection": "rl-procedimento-ocupacao"
+    }
+  }
+}

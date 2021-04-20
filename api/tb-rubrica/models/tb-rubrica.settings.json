@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_rubrica",
+  "info": {
+    "name": "tb_rubrica",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_rubrica": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 6
+    },
+    "no_rubrica": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "tb_procedimentos": {
+      "via": "co_rubrica",
+      "collection": "tb-procedimento"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_ocupacao",
+  "info": {
+    "name": "rl_procedimento_ocupacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "model": "tb-procedimento",
+      "via": "rl_procedimento_ocupacaos"
+    },
+    "co_ocupacao": {
+      "model": "tb-ocupacao",
+      "via": "rl_procedimento_ocupacaos"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-incrementos",
+      "handler": "rl-procedimento-incremento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-incrementos/count",
+      "handler": "rl-procedimento-incremento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-incrementos/:id",
+      "handler": "rl-procedimento-incremento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-incrementos",
+      "handler": "rl-procedimento-incremento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-incrementos/:id",
+      "handler": "rl-procedimento-incremento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-incrementos/:id",
+      "handler": "rl-procedimento-incremento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

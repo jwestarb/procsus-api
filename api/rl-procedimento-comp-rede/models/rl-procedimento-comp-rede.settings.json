@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_comp_rede",
+  "info": {
+    "name": "rl_procedimento_comp_rede"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "model": "tb-procedimento",
+      "via": "rl_procedimento_comp_redes"
+    },
+    "co_componente_rede": {
+      "model": "tb-componente-rede",
+      "via": "rl_procedimento_comp_redes"
+    }
+  }
+}

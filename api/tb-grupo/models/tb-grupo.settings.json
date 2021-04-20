@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_grupo",
+  "info": {
+    "name": "tb_grupo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_grupo": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2
+    },
+    "no_grupo": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "dt_competencia": {
+      "type": "string",
+      "maxLength": 6,
+      "required": true
+    }
+  }
+}

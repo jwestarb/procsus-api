@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_habilitacao",
+  "info": {
+    "name": "tb_habilitacao",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_habilitacao": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 4
+    },
+    "no_habilitacao": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_habilitacaos": {
+      "collection": "rl-procedimento-habilitacao",
+      "via": "co_habilitacao"
+    },
+    "rl_procedimento_incrementos": {
+      "collection": "rl-procedimento-incremento",
+      "via": "co_habilitacao"
+    }
+  }
+}

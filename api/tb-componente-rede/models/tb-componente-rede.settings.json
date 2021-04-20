@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_componente_rede",
+  "info": {
+    "name": "tb_componente_rede",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_componente_rede": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "no_componente_rede": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "co_rede_atencao": {
+      "type": "string",
+      "maxLength": 3
+    },
+    "rl_procedimento_comp_redes": {
+      "via": "co_componente_rede",
+      "collection": "rl-procedimento-comp-rede"
+    }
+  }
+}

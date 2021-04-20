@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-registros",
+      "handler": "rl-procedimento-registro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-registros/count",
+      "handler": "rl-procedimento-registro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-registros/:id",
+      "handler": "rl-procedimento-registro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-registros",
+      "handler": "rl-procedimento-registro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-registros/:id",
+      "handler": "rl-procedimento-registro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-registros/:id",
+      "handler": "rl-procedimento-registro.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

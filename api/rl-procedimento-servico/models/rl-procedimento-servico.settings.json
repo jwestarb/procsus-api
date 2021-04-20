@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_servico",
+  "info": {
+    "name": "rl_procedimento_servico"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_servicos",
+      "model": "tb-procedimento"
+    },
+    "co_servico": {
+      "via": "rl_procedimento_servicos",
+      "model": "tb-servico"
+    },
+    "co_classificacao": {
+      "via": "rl_procedimento_servicos",
+      "model": "tb-servico-classificacao"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

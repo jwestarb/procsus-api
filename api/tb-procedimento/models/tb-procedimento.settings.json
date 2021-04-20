@@ -1,0 +1,168 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_procedimento",
+  "info": {
+    "name": "tb_procedimento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "no_procedimento": {
+      "type": "string",
+      "required": true,
+      "maxLength": 250
+    },
+    "tp_complexidade": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1
+    },
+    "tp_sexo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1
+    },
+    "qt_maxima_execucao": {
+      "type": "integer",
+      "required": true,
+      "max": 9999
+    },
+    "qt_dias_permanencia": {
+      "type": "integer",
+      "required": true,
+      "max": 9999
+    },
+    "qt_pontos": {
+      "type": "integer",
+      "required": true,
+      "max": 9999
+    },
+    "vl_idade_minima": {
+      "type": "integer",
+      "required": true,
+      "max": 9999
+    },
+    "vl_idade_maxima": {
+      "type": "integer",
+      "required": true,
+      "max": 9999
+    },
+    "vl_sh": {
+      "type": "decimal",
+      "required": false
+    },
+    "vl_sa": {
+      "type": "decimal"
+    },
+    "vl_sp": {
+      "type": "decimal"
+    },
+    "co_financiamento": {
+      "via": "tb_procedimentos",
+      "model": "tb-financiamento"
+    },
+    "co_rubrica": {
+      "model": "tb-rubrica",
+      "via": "tb_procedimentos"
+    },
+    "qt_tempo_permanencia": {
+      "type": "integer",
+      "max": 9999
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_cids": {
+      "via": "co_procedimento",
+      "collection": "rl-procedimento-cid"
+    },
+    "rl_procedimento_ocupacaos": {
+      "via": "co_procedimento",
+      "collection": "rl-procedimento-ocupacao"
+    },
+    "rl_procedimento_sia_sihs": {
+      "collection": "rl-procedimento-sia-sih",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_detalhes": {
+      "collection": "rl-procedimento-detalhe",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_habilitacaos": {
+      "collection": "rl-procedimento-habilitacao",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_leitos": {
+      "collection": "rl-procedimento-leito",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_modalidades": {
+      "collection": "rl-procedimento-modalidade",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_origems": {
+      "collection": "rl-procedimento-origem",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_compat_princ": {
+      "collection": "rl-procedimento-compativel",
+      "via": "co_procedimento_principal"
+    },
+    "rl_procedimento_compat_compat": {
+      "collection": "rl-procedimento-compativel",
+      "via": "co_procedimento_compativel"
+    },
+    "rl_procedimento_incrementos": {
+      "collection": "rl-procedimento-incremento",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_registros": {
+      "collection": "rl-procedimento-registro",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_regra_conds": {
+      "collection": "rl-procedimento-regra-cond",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_renases": {
+      "collection": "rl-procedimento-renases",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_servicos": {
+      "collection": "rl-procedimento-servico",
+      "via": "co_procedimento"
+    },
+    "rl_procedimento_comp_redes": {
+      "via": "co_procedimento",
+      "collection": "rl-procedimento-comp-rede"
+    },
+    "rl_excecao_compatibilidades": {
+      "via": "co_procedimento_restricao",
+      "collection": "rl-excecao-compatibilidade"
+    },
+    "rl_excecao_compat_principal": {
+      "via": "co_procedimento_principal",
+      "collection": "rl-excecao-compatibilidade"
+    },
+    "rl_excecao_compat_compativel": {
+      "via": "co_procedimento_compativel",
+      "collection": "rl-excecao-compatibilidade"
+    },
+    "rl_procedimento_tusses": {
+      "via": "co_procedimento",
+      "collection": "rl-procedimento-tuss"
+    }
+  }
+}

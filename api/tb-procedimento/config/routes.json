@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-procedimentos",
+      "handler": "tb-procedimento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-procedimentos/count",
+      "handler": "tb-procedimento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-procedimentos/:id",
+      "handler": "tb-procedimento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-procedimentos",
+      "handler": "tb-procedimento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-procedimentos/:id",
+      "handler": "tb-procedimento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-procedimentos/:id",
+      "handler": "tb-procedimento.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-procedimentos/populate",
+      "handler": "tb-procedimento.populate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

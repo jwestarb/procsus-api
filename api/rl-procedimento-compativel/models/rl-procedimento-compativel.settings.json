@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_compativel",
+  "info": {
+    "name": "rl_procedimento_compativel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento_principal": {
+      "model": "tb-procedimento",
+      "via": "rl_procedimento_compat_princ"
+    },
+    "co_registro_principal": {
+      "model": "tb-registro",
+      "via": "rl_procedimento_compat_regprinc"
+    },
+    "co_procedimento_compativel": {
+      "via": "rl_procedimento_compat_compat",
+      "model": "tb-procedimento"
+    },
+    "co_registro_compativel": {
+      "via": "rl_procedimento_compat_regcompat",
+      "model": "tb-registro"
+    },
+    "tp_compatibilidade": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1
+    },
+    "qt_permitida": {
+      "type": "integer",
+      "required": true
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

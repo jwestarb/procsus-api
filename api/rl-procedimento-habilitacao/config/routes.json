@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-habilitacaos",
+      "handler": "rl-procedimento-habilitacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-habilitacaos/count",
+      "handler": "rl-procedimento-habilitacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-habilitacaos/:id",
+      "handler": "rl-procedimento-habilitacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-habilitacaos",
+      "handler": "rl-procedimento-habilitacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-habilitacaos/:id",
+      "handler": "rl-procedimento-habilitacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-habilitacaos/:id",
+      "handler": "rl-procedimento-habilitacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

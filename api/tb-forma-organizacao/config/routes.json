@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-forma-organizacaos",
+      "handler": "tb-forma-organizacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-forma-organizacaos/count",
+      "handler": "tb-forma-organizacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-forma-organizacaos/:id",
+      "handler": "tb-forma-organizacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-forma-organizacaos",
+      "handler": "tb-forma-organizacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-forma-organizacaos/:id",
+      "handler": "tb-forma-organizacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-forma-organizacaos/:id",
+      "handler": "tb-forma-organizacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

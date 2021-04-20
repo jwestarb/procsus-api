@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_sia_sih",
+  "info": {
+    "name": "tb_sia_sih",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento_sia_sih": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10
+    },
+    "no_procedimento_sia_sih": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "tp_procedimento": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_sia_sihs": {
+      "collection": "rl-procedimento-sia-sih",
+      "via": "co_procedimento_sia_sih"
+    }
+  }
+}

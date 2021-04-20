@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-financiamentos",
+      "handler": "tb-financiamento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-financiamentos/count",
+      "handler": "tb-financiamento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-financiamentos/:id",
+      "handler": "tb-financiamento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-financiamentos",
+      "handler": "tb-financiamento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-financiamentos/:id",
+      "handler": "tb-financiamento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-financiamentos/:id",
+      "handler": "tb-financiamento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

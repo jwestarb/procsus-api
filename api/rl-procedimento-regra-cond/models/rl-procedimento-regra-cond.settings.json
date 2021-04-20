@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_regra_cond",
+  "info": {
+    "name": "rl_procedimento_regra_cond"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_regra_conds",
+      "model": "tb-procedimento"
+    },
+    "co_regra_condicionada": {
+      "via": "rl_procedimento_regra_conds",
+      "model": "tb-regra-condicionada"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_modalidade",
+  "info": {
+    "name": "rl_procedimento_modalidade"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_modalidades",
+      "model": "tb-procedimento"
+    },
+    "co_modalidade": {
+      "via": "rl_procedimento_modalidades",
+      "model": "tb-modalidade"
+    },
+    "dt_competencia": {
+      "type": "string",
+      "unique": false,
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

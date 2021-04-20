@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_tipo_leito",
+  "info": {
+    "name": "tb_tipo_leito",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_tipo_leito": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2
+    },
+    "no_tipo_leito": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_leitos": {
+      "collection": "rl-procedimento-leito",
+      "via": "co_tipo_leito"
+    }
+  }
+}

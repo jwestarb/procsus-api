@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-ocupacaos",
+      "handler": "rl-procedimento-ocupacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-ocupacaos/count",
+      "handler": "rl-procedimento-ocupacao.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rl-procedimento-ocupacaos/:id",
+      "handler": "rl-procedimento-ocupacao.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rl-procedimento-ocupacaos",
+      "handler": "rl-procedimento-ocupacao.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rl-procedimento-ocupacaos/:id",
+      "handler": "rl-procedimento-ocupacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rl-procedimento-ocupacaos/:id",
+      "handler": "rl-procedimento-ocupacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

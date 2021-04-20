@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_modalidade",
+  "info": {
+    "name": "tb_modalidade",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_modalidade": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2
+    },
+    "no_modalidade": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "dt_competencia": {
+      "type": "string",
+      "required": true,
+      "maxLength": 6
+    },
+    "rl_procedimento_modalidades": {
+      "collection": "rl-procedimento-modalidade",
+      "via": "co_modalidade"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tb-regra-condicionadas",
+      "handler": "tb-regra-condicionada.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-regra-condicionadas/count",
+      "handler": "tb-regra-condicionada.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tb-regra-condicionadas/:id",
+      "handler": "tb-regra-condicionada.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tb-regra-condicionadas",
+      "handler": "tb-regra-condicionada.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tb-regra-condicionadas/:id",
+      "handler": "tb-regra-condicionada.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tb-regra-condicionadas/:id",
+      "handler": "tb-regra-condicionada.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rl_procedimento_renases",
+  "info": {
+    "name": "rl_procedimento_renases"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "co_procedimento": {
+      "via": "rl_procedimento_renases",
+      "model": "tb-procedimento"
+    },
+    "co_renases": {
+      "via": "rl_procedimento_renases",
+      "model": "tb-renases"
+    }
+  }
+}
